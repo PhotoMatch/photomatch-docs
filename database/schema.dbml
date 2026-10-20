@@ -93,7 +93,7 @@ Table inquiries {
 Table reviews {
   id int [pk, increment]
   inquiry_id int [unique, not null, ref: - inquiries.id]
-  rating tinyint [not null]
+  rating smallint [not null]
   comment text
   created_at datetime [default: `now()`]
   deleted_at datetime [null]
